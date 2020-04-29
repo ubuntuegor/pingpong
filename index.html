@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ping Pong</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="overflow"></div>
+	<div class="center">
+		<div class="container">
+			<div class="pause"></div><canvas id="game">Не поддерживается.</canvas><div class="fs"></div>
+			<div class="menu pausemenu">
+				<button onclick="startSingle()" id="start">Продолжить</button>
+				<div class="settings">
+					<p><input type="checkbox" class="sounds" id="sounds" checked> <label for="sounds">Звуки</label></p>
+					<p><input type="checkbox" class="music" id="music" checked> <label for="music">Музыка</label></p>
+					<p><input type="checkbox" class="graphics" id="graphics" checked> <label for="graphics">Графика</label></p>
+				</div>
+				<button onclick="menu()" id="start">Назад в меню</button>
+			</div>
+			<div class="menu main">
+				<button onclick="startSingle()" id="start">Играть с ботом</button>
+				<div class="settings">
+					<p><input type="checkbox" class="sounds" id="sounds1" checked> <label for="sounds1">Звуки</label></p>
+					<p><input type="checkbox" class="music" id="music1" checked> <label for="music1">Музыка</label></p>
+					<p><input type="checkbox" class="graphics" id="graphics1" checked> <label for="graphics1">Графика</label></p>
+				</div>
+				<p>Сложность:</p>
+				<input type="range" min="6" max="24" value="10" id="speed" class="speed">
+				<br>
+				<p style="font-family: Arial, sans-serif; font-size: 10px;">sounds by freesound.org</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
